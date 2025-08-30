@@ -179,6 +179,9 @@
         box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
       }
     }
+    html {
+       scroll-behavior: smooth;
+    }
 
     /* Custom Scrollbar */
     ::-webkit-scrollbar {
@@ -299,10 +302,11 @@
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between items-center py-4">
         <div class="flex items-center space-x-3">
-          <div class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-lg flex items-center justify-center pulse-ring">
-            <img src="/assets/escrowind-logo(1).png" alt="EscrowIND logo" class="w-8 h-8" />
-          </div>
-          <span class="text-xl font-bold">EscrowIND</span>
+          <a href="#top" class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-500 rounded-lg flex items-center justify-center pulse-ring">
+              <img src="/assets/escrowind-logo(1).png" alt="EscrowIND logo" class="w-8 h-8" />
+            </div>
+            <span class="text-xl font-bold">EscrowIND</span>
         </div>
         
         <div class="hidden md:flex items-center space-x-8">
@@ -338,19 +342,19 @@
         </button>
       </div>
       <div class="flex flex-col space-y-6 px-8 py-4">
-        <a href="#why" onclick="toggleMenu()" class="text-white hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg">
+        <a href="#why" onclick="toggleMenu()" class="text-black hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg">
           <i class="fas fa-question-circle w-6"></i>
           <span>Why?</span>
         </a>
-        <a href="#how" onclick="toggleMenu()" class="text-white hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg">
+        <a href="#how" onclick="toggleMenu()" class="text-black hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg">
           <i class="fas fa-cogs w-6"></i>
           <span>How It Works</span>
         </a>
-        <a href="#waitlist" onclick="toggleMenu()" class="text-white hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg">
+        <a href="#waitlist" onclick="toggleMenu()" class="text-black hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg">
           <i class="fas fa-users w-6"></i>
           <span>Join Waitlist</span>
         </a>
-        <a href="#contact" onclick="toggleMenu()" class="text-white hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg">
+        <a href="#contact" onclick="toggleMenu()" class="text-black hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg">
           <i class="fas fa-envelope w-6"></i>
           <span>Contact</span>
         </a>
@@ -359,7 +363,7 @@
   </nav>
 
     <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center animated-bg overflow-hidden">
+  <section id="top"class="relative min-h-screen flex items-center animated-bg overflow-hidden">
     <!-- Particles Background -->
     <div class="particles">
       <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
@@ -721,11 +725,14 @@
         </div>
         
         <div class="flex items-center space-x-6">
-          <a href="#" class="hover:text-blue-400 transition-colors">
-            <i class="fab fa-twitter text-xl"></i>
+          <a href="https://x.com/escrowind" class="hover:text-blue-400 transition-colors">
+            <i class="fab fa-x text-xl"></i>
           </a>
           <a href="#" class="hover:text-blue-400 transition-colors">
             <i class="fab fa-facebook text-xl"></i>
+          </a>
+          <a href="https://instagram.com/escrowind" class="hover:text-blue-400 transition-colors">
+            <i class="fab fa-instagram text-xl"></i>
           </a>
           <a href="#" class="hover:text-blue-400 transition-colors">
             <i class="fab fa-linkedin text-xl"></i>
